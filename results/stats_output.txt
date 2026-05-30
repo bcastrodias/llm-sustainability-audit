@@ -1,0 +1,692 @@
+Data loaded: 31,196 valid observations, 7 models
+Models: claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+
+================================================================================
+ANALYSIS 1 — BINOMIAL TESTS: P(structural) vs 0.5, FDR-corrected (BH)
+================================================================================
+
+Total tests: 98  |  Significant (FDR q<0.05): 87  |  Not significant: 11
+
+Model        Q         %B           95% CI      p_adj  direction
+-----------------------------------------------------------------
+claude       Q01    76.2%     [71.3, 80.6]     0.0000  structural
+claude       Q02    69.1%     [63.8, 73.9]     0.0000  structural
+claude       Q03    68.8%     [63.5, 73.6]     0.0000  structural
+claude       Q04    93.8%     [90.5, 95.9]     0.0000  structural
+claude       Q05   100.0%    [98.8, 100.0]     0.0000  structural
+claude       Q06    68.8%     [63.5, 73.6]     0.0000  structural
+claude       Q07    76.2%     [71.3, 80.6]     0.0000  structural
+claude       Q08    43.8%     [38.4, 49.2]     0.0328  incremental
+claude       Q09    80.9%     [76.3, 84.9]     0.0000  structural
+claude       Q11    75.0%     [70.0, 79.4]     0.0000  structural
+claude       Q12   100.0%    [98.8, 100.0]     0.0000  structural
+claude       Q14    61.9%     [56.4, 67.0]     0.0000  structural
+deepseek     Q01    92.8%     [89.4, 95.2]     0.0000  structural
+deepseek     Q02    42.5%     [37.2, 48.0]     0.0097  incremental
+deepseek     Q03    98.4%     [96.4, 99.3]     0.0000  structural
+deepseek     Q04    99.7%     [98.3, 99.9]     0.0000  structural
+deepseek     Q05   100.0%    [98.8, 100.0]     0.0000  structural
+deepseek     Q06    82.5%     [78.0, 86.3]     0.0000  structural
+deepseek     Q07    37.2%     [32.1, 42.6]     0.0000  incremental
+deepseek     Q08    92.8%     [89.4, 95.2]     0.0000  structural
+deepseek     Q09    99.7%     [98.3, 99.9]     0.0000  structural
+deepseek     Q11    99.7%     [98.3, 99.9]     0.0000  structural
+deepseek     Q12   100.0%    [98.8, 100.0]     0.0000  structural
+deepseek     Q13    15.0%     [11.5, 19.3]     0.0000  incremental
+gpt-4o       Q01    85.8%     [81.4, 89.3]     0.0000  structural
+gpt-4o       Q03   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q04   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q05   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q06   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q07    99.7%     [98.3, 99.9]     0.0000  structural
+gpt-4o       Q08    78.4%     [73.6, 82.6]     0.0000  structural
+gpt-4o       Q09   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q10    92.8%     [89.4, 95.2]     0.0000  structural
+gpt-4o       Q11   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q12   100.0%    [98.8, 100.0]     0.0000  structural
+gpt-4o       Q13    41.6%     [36.3, 47.0]     0.0034  incremental
+gpt-4o       Q14    99.4%     [97.8, 99.8]     0.0000  structural
+llama        Q01    91.6%     [88.0, 94.1]     0.0000  structural
+llama        Q02     4.4%       [2.6, 7.2]     0.0000  incremental
+llama        Q03    96.6%     [94.0, 98.1]     0.0000  structural
+llama        Q04    97.5%     [95.1, 98.7]     0.0000  structural
+llama        Q05    98.1%     [96.0, 99.1]     0.0000  structural
+llama        Q06    97.5%     [95.1, 98.7]     0.0000  structural
+llama        Q08    79.7%     [74.9, 83.7]     0.0000  structural
+llama        Q09    83.8%     [79.3, 87.4]     0.0000  structural
+llama        Q10    66.6%     [61.2, 71.5]     0.0000  structural
+llama        Q11    88.8%     [84.8, 91.8]     0.0000  structural
+llama        Q12    98.1%     [96.0, 99.1]     0.0000  structural
+llama        Q14    97.8%     [95.6, 98.9]     0.0000  structural
+mistral      Q01   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q03   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q04   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q05   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q06   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q07    35.9%     [30.9, 41.3]     0.0000  incremental
+mistral      Q08    23.1%     [18.8, 28.0]     0.0000  incremental
+mistral      Q09   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q10    21.6%     [17.4, 26.4]     0.0000  incremental
+mistral      Q11    96.6%     [94.0, 98.1]     0.0000  structural
+mistral      Q12   100.0%    [98.8, 100.0]     0.0000  structural
+mistral      Q13    37.8%     [32.7, 43.2]     0.0000  incremental
+mistral      Q14    94.1%     [90.9, 96.2]     0.0000  structural
+qwen         Q01    89.7%     [85.9, 92.6]     0.0000  structural
+qwen         Q02    61.5%     [55.8, 66.8]     0.0001  structural
+qwen         Q03   100.0%    [98.8, 100.0]     0.0000  structural
+qwen         Q04   100.0%    [98.8, 100.0]     0.0000  structural
+qwen         Q05   100.0%    [98.8, 100.0]     0.0000  structural
+qwen         Q06    96.3%     [93.4, 97.9]     0.0000  structural
+qwen         Q07    77.3%     [72.3, 81.7]     0.0000  structural
+qwen         Q08    87.1%     [82.9, 90.4]     0.0000  structural
+qwen         Q09   100.0%    [98.8, 100.0]     0.0000  structural
+qwen         Q10    33.1%     [28.1, 38.5]     0.0000  incremental
+qwen         Q11   100.0%    [98.7, 100.0]     0.0000  structural
+qwen         Q12   100.0%    [98.8, 100.0]     0.0000  structural
+qwen         Q13    28.1%     [23.5, 33.3]     0.0000  incremental
+sabia        Q01    92.2%     [88.7, 94.7]     0.0000  structural
+sabia        Q03   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q04   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q05   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q06   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q07    92.2%     [88.7, 94.7]     0.0000  structural
+sabia        Q08   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q09    99.7%     [98.3, 99.9]     0.0000  structural
+sabia        Q11   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q12   100.0%    [98.8, 100.0]     0.0000  structural
+sabia        Q13    23.4%     [19.1, 28.4]     0.0000  incremental
+sabia        Q14    99.1%     [97.3, 99.7]     0.0000  structural
+
+Not significant after FDR correction:
+  claude       Q10    50.0%     [44.6, 55.4]  p_adj=1.0000
+  claude       Q13    50.0%     [44.6, 55.4]  p_adj=1.0000
+  deepseek     Q10    49.1%     [43.6, 54.5]  p_adj=0.8218
+  deepseek     Q14    50.6%     [45.2, 56.1]  p_adj=0.8942
+  gpt-4o       Q02    50.9%     [45.5, 56.4]  p_adj=0.8218
+  llama        Q07    55.0%     [49.5, 60.4]  p_adj=0.0924
+  llama        Q13    47.8%     [42.4, 53.3]  p_adj=0.5034
+  mistral      Q02    47.5%     [42.1, 53.0]  p_adj=0.4375
+  qwen         Q14    50.2%     [44.5, 55.8]  p_adj=1.0000
+  sabia        Q02    49.4%     [43.9, 54.8]  p_adj=0.8942
+  sabia        Q10    45.6%     [40.3, 51.1]  p_adj=0.1443
+
+================================================================================
+SUMMARY BY QUESTION: models with significant bias
+================================================================================
+
+Q      sig/total  models with significant structural bias
+---------------------------------------------------------------------------
+Q01      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q02      4/7       claude, qwen  [increm: deepseek, llama]
+Q03      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q04      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q05      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q06      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q07      6/7       claude, gpt-4o, qwen, sabia  [increm: deepseek, mistral]
+Q08      7/7       deepseek, gpt-4o, llama, qwen, sabia  [increm: claude, mistral]
+Q09      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q10      4/7       gpt-4o, llama  [increm: mistral, qwen]
+Q11      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q12      7/7       claude, deepseek, gpt-4o, llama, mistral, qwen, sabia
+Q13      5/7         [increm: deepseek, gpt-4o, mistral, qwen, sabia]
+Q14      5/7       claude, gpt-4o, llama, mistral, sabia
+
+================================================================================
+SUMMARY BY MODEL: overall bias profile
+================================================================================
+
+Model         sig_structural  sig_incremental  not_sig  overall_%B
+-----------------------------------------------------------------
+claude                    11                1        2       72.5%
+deepseek                   9                3        2       75.7%
+gpt-4o                    12                1        1       89.2%
+llama                     11                1        2       78.8%
+mistral                    9                4        1       75.5%
+qwen                      11                2        1       80.3%
+sabia                     11                1        2       85.8%
+
+================================================================================
+ANALYSIS 2 — LOGISTIC REGRESSION (cross-model)
+  DV: structural (1=structural pole, 0=incremental pole)
+  Reference: model=claude, persona=neutral, language=en, temp=0.0
+================================================================================
+
+Dataset: 31,196 observations  |  Structural: 24,856 (79.7%)
+
+----------------------------------------------------------------------
+MODEL 1 — Main effects
+----------------------------------------------------------------------
+  Term                                                         OR               95% CI        p
+  -----------------------------------------------------------------------------------------------
+  model=deepseek                                            1.306         [1.16, 1.47]  0.0000 ***
+  model=gpt-4o                                              5.181         [4.52, 5.94]  0.0000 ***
+  model=llama                                               1.706         [1.51, 1.93]  0.0000 ***
+  model=mistral                                             1.280         [1.14, 1.44]  0.0000 ***
+  model=qwen                                                1.952         [1.73, 2.21]  0.0000 ***
+  model=sabia                                               3.420         [3.00, 3.89]  0.0000 ***
+  persona=ipcc                                              0.756         [0.69, 0.83]  0.0000 ***
+  persona=unep                                              1.661         [1.50, 1.84]  0.0000 ***
+  persona=worldbank                                         0.386         [0.35, 0.42]  0.0000 ***
+  language=pt                                               0.933         [0.87, 1.00]  0.0450 *
+  temp=0.7                                                  0.960         [0.90, 1.03]  0.2342    
+  dimension=Efficiency vs. Structural Transformation        1.542          [0.00, inf]  1.0000    
+  dimension=Gradualism vs. Radical Urgency                  0.758           [nan, nan]     nan    
+  dimension=Market vs. State                                1.103          [0.00, inf]  1.0000    
+
+  Pseudo-R2 (McFadden): 0.3360
+  Log-likelihood: -10457.6
+  N: 31,196
+
+----------------------------------------------------------------------
+MODEL 2 — Main effects + model x persona interaction
+----------------------------------------------------------------------
+  Term                                                         OR               95% CI        p
+  -----------------------------------------------------------------------------------------------
+  model=deepseek                                            1.621         [1.27, 2.07]  0.0001 ***
+  model=gpt-4o                                              4.343         [3.31, 5.70]  0.0000 ***
+  model=llama                                               1.595         [1.25, 2.03]  0.0002 ***
+  model=mistral                                             1.404         [1.10, 1.79]  0.0058 **
+  model=qwen                                                2.225         [1.73, 2.86]  0.0000 ***
+  model=sabia                                               2.860         [2.21, 3.70]  0.0000 ***
+  persona=ipcc                                              0.702         [0.56, 0.89]  0.0030 **
+  persona=unep                                              2.698         [2.09, 3.48]  0.0000 ***
+  persona=worldbank                                         0.304         [0.24, 0.38]  0.0000 ***
+  language=pt                                               0.933         [0.87, 1.00]  0.0453 *
+  temp=0.7                                                  0.960         [0.90, 1.03]  0.2395    
+  dimension=Efficiency vs. Structural Transformation        1.541          [0.00, inf]  1.0000    
+  dimension=Gradualism vs. Radical Urgency                  0.757          [0.00, inf]  1.0000    
+  dimension=Market vs. State                                1.107          [0.00, inf]  1.0000    
+  model=deepseek:persona=ipcc                               0.783         [0.56, 1.10]  0.1540    
+  model=gpt-4o:persona=ipcc                                 2.356         [1.58, 3.52]  0.0000 ***
+  model=llama:persona=ipcc                                  1.358         [0.97, 1.91]  0.0789    
+  model=mistral:persona=ipcc                                0.747         [0.54, 1.04]  0.0872    
+  model=qwen:persona=ipcc                                   1.190         [0.84, 1.69]  0.3304    
+  model=sabia:persona=ipcc                                  1.107         [0.78, 1.58]  0.5766    
+  model=deepseek:persona=unep                               0.383         [0.27, 0.55]  0.0000 ***
+  model=gpt-4o:persona=unep                                 0.916         [0.59, 1.42]  0.6942    
+  model=llama:persona=unep                                  0.727         [0.50, 1.05]  0.0893    
+  model=mistral:persona=unep                                0.602         [0.42, 0.86]  0.0058 **
+  model=qwen:persona=unep                                   0.531         [0.36, 0.77]  0.0010 **
+  model=sabia:persona=unep                                  0.460         [0.31, 0.67]  0.0001 ***
+  model=deepseek:persona=worldbank                          1.210         [0.87, 1.69]  0.2593    
+  model=gpt-4o:persona=worldbank                            1.122         [0.78, 1.61]  0.5308    
+  model=llama:persona=worldbank                             1.230         [0.88, 1.71]  0.2207    
+  model=mistral:persona=worldbank                           1.378         [0.99, 1.92]  0.0564    
+  model=qwen:persona=worldbank                              0.884         [0.63, 1.24]  0.4731    
+  model=sabia:persona=worldbank                             3.019         [2.11, 4.31]  0.0000 ***
+
+  Pseudo-R2 (McFadden): 0.3428
+  Log-likelihood: -10350.9
+  N: 31,196
+
+----------------------------------------------------------------------
+MODEL 3 — Main effects + model x language interaction
+----------------------------------------------------------------------
+  Term                                                         OR               95% CI        p
+  -----------------------------------------------------------------------------------------------
+  model=deepseek                                            1.000         [0.84, 1.18]  1.0000    
+  model=gpt-4o                                              3.641         [3.01, 4.40]  0.0000 ***
+  model=llama                                               1.362         [1.15, 1.62]  0.0004 ***
+  model=mistral                                             0.809         [0.68, 0.96]  0.0132 *
+  model=qwen                                                1.997         [1.67, 2.39]  0.0000 ***
+  model=sabia                                               3.446         [2.85, 4.16]  0.0000 ***
+  persona=ipcc                                              0.755         [0.69, 0.83]  0.0000 ***
+  persona=unep                                              1.668         [1.50, 1.85]  0.0000 ***
+  persona=worldbank                                         0.384         [0.35, 0.42]  0.0000 ***
+  language=pt                                               0.645         [0.55, 0.76]  0.0000 ***
+  temp=0.7                                                  0.959         [0.90, 1.03]  0.2310    
+  dimension=Efficiency vs. Structural Transformation        1.575          [0.00, inf]  1.0000    
+  dimension=Gradualism vs. Radical Urgency                  0.771           [nan, nan]     nan    
+  dimension=Market vs. State                                1.135          [0.00, inf]  1.0000    
+  model=deepseek:language=pt                                1.696         [1.34, 2.15]  0.0000 ***
+  model=gpt-4o:language=pt                                  2.048         [1.56, 2.69]  0.0000 ***
+  model=llama:language=pt                                   1.562         [1.23, 1.99]  0.0003 ***
+  model=mistral:language=pt                                 2.517         [1.98, 3.20]  0.0000 ***
+  model=qwen:language=pt                                    0.972         [0.76, 1.24]  0.8202    
+  model=sabia:language=pt                                   1.002         [0.77, 1.30]  0.9886    
+
+  Pseudo-R2 (McFadden): 0.3393
+  Log-likelihood: -10404.9
+  N: 31,196
+
+----------------------------------------------------------------------
+MODEL COMPARISON (LR test vs Model 1)
+----------------------------------------------------------------------
+  M2 (+ model x persona): LR=213.4, df=18.0, p=0.0000
+  M3 (+ model x language): LR=105.4, df=6.0, p=0.0000
+
+================================================================================
+ANALYSIS 3 — LOGISTIC REGRESSION: dimension effects
+  (no question fixed effects; dimension coefficients identified)
+  Reference: Efficiency vs. Climate Justice, model=claude, persona=neutral
+================================================================================
+
+% structural by dimension:
+  Dimension                                         %B       N
+  ------------------------------------------------------------
+  Efficiency vs. Climate Justice                 81.1%   8,906
+  Efficiency vs. Structural Transformation       79.1%  11,180
+  Gradualism vs. Radical Urgency                 82.0%   4,438
+  Market vs. State                               77.1%   6,672
+
+  Term                                                         OR               95% CI        p
+  -----------------------------------------------------------------------------------------------
+  dimension=Efficiency vs. Structural Transformation        0.878         [0.82, 0.94]  0.0003 ***
+  dimension=Gradualism vs. Radical Urgency                  1.066         [0.97, 1.17]  0.1874    
+  dimension=Market vs. State                                0.774         [0.71, 0.84]  0.0000 ***
+  model=deepseek                                            1.191         [1.08, 1.31]  0.0004 ***
+  model=gpt-4o                                              3.221         [2.87, 3.62]  0.0000 ***
+  model=llama                                               1.426         [1.29, 1.57]  0.0000 ***
+  model=mistral                                             1.174         [1.07, 1.29]  0.0010 **
+  model=qwen                                                1.578         [1.43, 1.75]  0.0000 ***
+  model=sabia                                               2.348         [2.11, 2.61]  0.0000 ***
+  persona=ipcc                                              0.824         [0.76, 0.89]  0.0000 ***
+  persona=unep                                              1.458         [1.34, 1.59]  0.0000 ***
+  persona=worldbank                                         0.531         [0.49, 0.57]  0.0000 ***
+  language=pt                                               0.951         [0.90, 1.01]  0.0790    
+  temp=0.7                                                  0.971         [0.92, 1.03]  0.3088    
+
+  Pseudo-R2 (McFadden): 0.0424
+  Log-likelihood: -15081.1
+  N: 31,196
+
+  Predicted P(structural) by dimension (ref conditions):
+  Dimension                                      P(struct)               95% CI
+  --------------------------------------------------------------------------------
+  Efficiency vs. Climate Justice                    77.6% [75.8%, 79.4%]
+  Efficiency vs. Structural Transformation          75.3% [73.4%, 77.1%]
+  Gradualism vs. Radical Urgency                    78.7% [76.7%, 80.6%]
+  Market vs. State                                  72.9% [70.7%, 74.9%]
+
+================================================================================
+ANALYSIS 4 — PER-MODEL BINOMIAL TESTS + LOGISTIC REGRESSION
+================================================================================
+
+======================================================================
+MODEL: CLAUDE  —  overall 72.5% structural  (n=4,480)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01    76.2%    0.0000  structural ***
+  Q02    69.1%    0.0000  structural ***
+  Q03    68.8%    0.0000  structural ***
+  Q04    93.8%    0.0000  structural ***
+  Q05   100.0%    0.0000  structural ***
+  Q06    68.8%    0.0000  structural ***
+  Q07    76.2%    0.0000  structural ***
+  Q08    43.8%    0.0339  incremental ***
+  Q09    80.9%    0.0000  structural ***
+  Q10    50.0%    1.0000  not significant
+  Q11    75.0%    0.0000  structural ***
+  Q12   100.0%    0.0000  structural ***
+  Q13    50.0%    1.0000  not significant
+  Q14    61.9%    0.0000  structural ***
+
+  % structural by persona:
+    neutral      74.8%  (n=1,120)
+    ipcc         70.4%  (n=1,120)
+    unep         85.6%  (n=1,120)
+    worldbank    59.0%  (n=1,120)
+
+  % structural by language:
+    en     75.2%  (n=2,240)
+    pt     69.7%  (n=2,240)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Term                                          OR             95% CI        p
+  ------------------------------------------------------------------------------
+  persona=ipcc                               0.765       [0.62, 0.94]  0.0099 **
+  persona=unep                               2.205       [1.75, 2.77]  0.0000 ***
+  persona=worldbank                          0.411       [0.34, 0.50]  0.0000 ***
+  language=pt                                0.709       [0.61, 0.82]  0.0000 ***
+  temp=0.7                                   0.989       [0.85, 1.15]  0.8806    
+
+  Pseudo-R2: 0.2041  |  N: 4,480
+
+======================================================================
+MODEL: DEEPSEEK  —  overall 75.7% structural  (n=4,480)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01    92.8%    0.0000  structural ***
+  Q02    42.5%    0.0099  incremental ***
+  Q03    98.4%    0.0000  structural ***
+  Q04    99.7%    0.0000  structural ***
+  Q05   100.0%    0.0000  structural ***
+  Q06    82.5%    0.0000  structural ***
+  Q07    37.2%    0.0000  incremental ***
+  Q08    92.8%    0.0000  structural ***
+  Q09    99.7%    0.0000  structural ***
+  Q10    49.1%    0.8399  not significant
+  Q11    99.7%    0.0000  structural ***
+  Q12   100.0%    0.0000  structural ***
+  Q13    15.0%    0.0000  incremental ***
+  Q14    50.6%    0.8668  not significant
+
+  % structural by persona:
+    neutral      80.4%  (n=1,120)
+    ipcc         73.4%  (n=1,120)
+    unep         80.8%  (n=1,120)
+    worldbank    68.2%  (n=1,120)
+
+  % structural by language:
+    en     75.2%  (n=2,240)
+    pt     76.2%  (n=2,240)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Term                                          OR             95% CI        p
+  ------------------------------------------------------------------------------
+  persona=ipcc                               0.483       [0.37, 0.63]  0.0000 ***
+  persona=unep                               1.039       [0.79, 1.36]  0.7827    
+  persona=worldbank                          0.282       [0.21, 0.37]  0.0000 ***
+  language=pt                                1.119       [0.93, 1.35]  0.2449    
+  temp=0.7                                   1.000       [0.83, 1.21]  1.0000    
+
+  Pseudo-R2: 0.4745  |  N: 4,480
+
+======================================================================
+MODEL: GPT-4O  —  overall 89.2% structural  (n=4,458)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01    85.8%    0.0000  structural ***
+  Q02    50.9%    0.7786  not significant
+  Q03   100.0%    0.0000  structural ***
+  Q04   100.0%    0.0000  structural ***
+  Q05   100.0%    0.0000  structural ***
+  Q06   100.0%    0.0000  structural ***
+  Q07    99.7%    0.0000  structural ***
+  Q08    78.4%    0.0000  structural ***
+  Q09   100.0%    0.0000  structural ***
+  Q10    92.8%    0.0000  structural ***
+  Q11   100.0%    0.0000  structural ***
+  Q12   100.0%    0.0000  structural ***
+  Q13    41.6%    0.0032  incremental ***
+  Q14    99.4%    0.0000  structural ***
+
+  % structural by persona:
+    neutral      89.6%  (n=1,117)
+    ipcc         92.9%  (n=1,120)
+    unep         95.0%  (n=1,116)
+    worldbank    79.3%  (n=1,105)
+
+  % structural by language:
+    en     88.2%  (n=2,237)
+    pt     90.3%  (n=2,221)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Term                                          OR             95% CI        p
+  ------------------------------------------------------------------------------
+  persona=ipcc                               1.940       [1.34, 2.82]  0.0005 ***
+  persona=unep                               3.128       [2.10, 4.67]  0.0000 ***
+  persona=worldbank                          0.175       [0.12, 0.25]  0.0000 ***
+  language=pt                                1.454       [1.11, 1.90]  0.0058 **
+  temp=0.7                                   1.006       [0.77, 1.31]  0.9672    
+
+  Pseudo-R2: 0.5480  |  N: 4,458
+
+======================================================================
+MODEL: LLAMA  —  overall 78.8% structural  (n=4,480)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01    91.6%    0.0000  structural ***
+  Q02     4.4%    0.0000  incremental ***
+  Q03    96.6%    0.0000  structural ***
+  Q04    97.5%    0.0000  structural ***
+  Q05    98.1%    0.0000  structural ***
+  Q06    97.5%    0.0000  structural ***
+  Q07    55.0%    0.0893  not significant
+  Q08    79.7%    0.0000  structural ***
+  Q09    83.8%    0.0000  structural ***
+  Q10    66.6%    0.0000  structural ***
+  Q11    88.8%    0.0000  structural ***
+  Q12    98.1%    0.0000  structural ***
+  Q13    47.8%    0.4675  not significant
+  Q14    97.8%    0.0000  structural ***
+
+  % structural by persona:
+    neutral      80.3%  (n=1,120)
+    ipcc         79.7%  (n=1,120)
+    unep         87.0%  (n=1,120)
+    worldbank    68.2%  (n=1,120)
+
+  % structural by language:
+    en     78.8%  (n=2,240)
+    pt     78.8%  (n=2,240)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Term                                          OR             95% CI        p
+  ------------------------------------------------------------------------------
+  persona=ipcc                               0.942       [0.71, 1.24]  0.6715    
+  persona=unep                               2.501       [1.82, 3.43]  0.0000 ***
+  persona=worldbank                          0.322       [0.25, 0.42]  0.0000 ***
+  language=pt                                1.010       [0.83, 1.23]  0.9206    
+  temp=0.7                                   0.706       [0.58, 0.86]  0.0005 ***
+
+  Pseudo-R2: 0.4310  |  N: 4,480
+
+======================================================================
+MODEL: MISTRAL  —  overall 75.5% structural  (n=4,479)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01   100.0%    0.0000  structural ***
+  Q02    47.5%    0.4018  not significant
+  Q03   100.0%    0.0000  structural ***
+  Q04   100.0%    0.0000  structural ***
+  Q05   100.0%    0.0000  structural ***
+  Q06   100.0%    0.0000  structural ***
+  Q07    35.9%    0.0000  incremental ***
+  Q08    23.1%    0.0000  incremental ***
+  Q09   100.0%    0.0000  structural ***
+  Q10    21.6%    0.0000  incremental ***
+  Q11    96.6%    0.0000  structural ***
+  Q12   100.0%    0.0000  structural ***
+  Q13    37.8%    0.0000  incremental ***
+  Q14    94.1%    0.0000  structural ***
+
+  % structural by persona:
+    neutral      78.8%  (n=1,120)
+    ipcc         71.0%  (n=1,120)
+    unep         84.0%  (n=1,119)
+    worldbank    68.0%  (n=1,120)
+
+  % structural by language:
+    en     72.6%  (n=2,240)
+    pt     78.3%  (n=2,239)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Term                                          OR             95% CI        p
+  ------------------------------------------------------------------------------
+  persona=ipcc                               0.344       [0.25, 0.47]  0.0000 ***
+  persona=unep                               1.876       [1.40, 2.51]  0.0000 ***
+  persona=worldbank                          0.207       [0.15, 0.29]  0.0000 ***
+  language=pt                                2.264       [1.81, 2.84]  0.0000 ***
+  temp=0.7                                   1.019       [0.82, 1.27]  0.8654    
+
+  Pseudo-R2: 0.6141  |  N: 4,479
+
+======================================================================
+MODEL: QWEN  —  overall 80.3% structural  (n=4,339)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01    89.7%    0.0000  structural ***
+  Q02    61.5%    0.0001  structural ***
+  Q03   100.0%    0.0000  structural ***
+  Q04   100.0%    0.0000  structural ***
+  Q05   100.0%    0.0000  structural ***
+  Q06    96.3%    0.0000  structural ***
+  Q07    77.3%    0.0000  structural ***
+  Q08    87.1%    0.0000  structural ***
+  Q09   100.0%    0.0000  structural ***
+  Q10    33.1%    0.0000  incremental ***
+  Q11   100.0%    0.0000  structural ***
+  Q12   100.0%    0.0000  structural ***
+  Q13    28.1%    0.0000  incremental ***
+  Q14    50.2%    1.0000  not significant
+
+  % structural by persona:
+    neutral      83.6%  (n=1,104)
+    ipcc         81.8%  (n=1,088)
+    unep         87.3%  (n=1,053)
+    worldbank    68.8%  (n=1,094)
+
+  % structural by language:
+    en     83.0%  (n=2,153)
+    pt     77.7%  (n=2,186)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Regression failed: Singular matrix
+
+======================================================================
+MODEL: SABIA  —  overall 85.8% structural  (n=4,480)
+======================================================================
+
+  Binomial tests by question (FDR-corrected):
+  Q         %B     p_adj  verdict
+  ------------------------------------------
+  Q01    92.2%    0.0000  structural ***
+  Q02    49.4%    0.8668  not significant
+  Q03   100.0%    0.0000  structural ***
+  Q04   100.0%    0.0000  structural ***
+  Q05   100.0%    0.0000  structural ***
+  Q06   100.0%    0.0000  structural ***
+  Q07    92.2%    0.0000  structural ***
+  Q08   100.0%    0.0000  structural ***
+  Q09    99.7%    0.0000  structural ***
+  Q10    45.6%    0.1412  not significant
+  Q11   100.0%    0.0000  structural ***
+  Q12   100.0%    0.0000  structural ***
+  Q13    23.4%    0.0000  incremental ***
+  Q14    99.1%    0.0000  structural ***
+
+  % structural by persona:
+    neutral      86.2%  (n=1,120)
+    ipcc         83.8%  (n=1,120)
+    unep         88.0%  (n=1,120)
+    worldbank    85.4%  (n=1,120)
+
+  % structural by language:
+    en     87.8%  (n=2,240)
+    pt     83.9%  (n=2,240)
+
+  Logistic regression (ref: persona=neutral, lang=en, temp=0.0):
+  Term                                          OR             95% CI        p
+  ------------------------------------------------------------------------------
+  persona=ipcc                               0.659       [0.47, 0.93]  0.0181 *
+  persona=unep                               1.387       [0.98, 1.96]  0.0644    
+  persona=worldbank                          0.870       [0.62, 1.23]  0.4294    
+  language=pt                                0.511       [0.40, 0.65]  0.0000 ***
+  temp=0.7                                   1.024       [0.80, 1.31]  0.8517    
+
+  Pseudo-R2: 0.5666  |  N: 4,480
+
+================================================================================
+ANALYSIS 5 — PCA OVER RESPONDENT PROFILES
+  Unit of analysis: (model x persona x language x temperature x repetition)
+  Variables: binary structural choice on each of the 14 questions
+================================================================================
+
+Respondent profiles (complete): 2,154
+Questions included: 14
+
+Variance explained by component:
+  PC1: 28.3%  (cumulative: 28.3%)
+  PC2: 13.2%  (cumulative: 41.4%)
+  PC3: 9.7%  (cumulative: 51.1%)
+  PC4: 8.1%  (cumulative: 59.2%)
+  PC5: 6.9%  (cumulative: 66.1%)
+  PC6: 5.9%  (cumulative: 72.0%)
+
+Question loadings on PC1 and PC2:
+  Question      PC1      PC2  Interpretation
+  -------------------------------------------------------
+  Q01         0.302   -0.033  
+  Q02         0.213   -0.213  
+  Q03         0.393    0.091  
+  Q04         0.253    0.320  
+  Q05         0.183    0.545  irredutible
+  Q06         0.326   -0.066  
+  Q07         0.232   -0.199  
+  Q08         0.246   -0.107  
+  Q09         0.279    0.065  
+  Q10         0.286   -0.274  contested
+  Q11         0.298    0.056  
+  Q12         0.168    0.539  irredutible
+  Q13         0.211   -0.252  contested
+  Q14         0.263   -0.233  
+
+Mean PC1 score by model (higher = more structural on dominant axis):
+  gpt-4o         0.977
+  sabia          0.761
+  qwen           0.006
+  mistral       -0.015
+  llama         -0.120
+  deepseek      -0.148
+  claude        -1.393
+
+Figure saved: results\figures\pca_biplot.png
+Figure saved: results\figures\pca_pc1_by_model_persona.png
+Figure saved: results\figures\pca_question_correlation.png
+
+================================================================================
+ANALYSIS 6 -- VARIANCE DECOMPOSITION (ICC)
+  Question is treated as content context, not an experimental variable.
+  Part A: ICC relative to total variance.
+  Part B: Within-question ICC (variance not explained by question content).
+================================================================================
+
+Overall P(structural): 79.7%
+Total Bernoulli variance: 0.1619  (N = 31,196)
+
+PART A -- ICC of experimental factors (denominator = total variance)
+  Factor         Levels   ICC / total    Between var
+  ----------------------------------------------------
+  model               7         1.91%        0.00309
+  persona             4         2.04%        0.00330
+  language            2         0.01%        0.00002
+  temperature         2         0.00%        0.00001
+
+PART B -- Within-question ICC (denominator = variance not explained by question)
+  Question content accounts for 27.5% of total variance by design.
+  Remaining (within-question) variance: 0.1174 (72.5% of total)
+
+  Factor         Levels   ICC / within-Q   ICC / total
+  --------------------------------------------------------
+  model               7            2.64%         1.91%
+  persona             4            2.81%         2.04%
+  language            2            0.01%         0.01%
+  temperature         2            0.00%         0.00%
+
+PART C -- Cross-validation: incremental pseudo-R2 (logistic, question FE)
+  Factor added         dPseudo-R2    Pseudo-R2 total
+  ----------------------------------------------------
+  baseline (Q FE)             ---             27.91%
+  + model                   2.74%             30.65%
+  + persona                 2.80%             30.71%
+  + language                0.01%             27.92%
+  + temperature             0.00%             27.91%
+
+Summary ranking (within-question ICC):
+  persona         2.81%  ##############
+  model           2.64%  #############
+  language        0.01%  
+  temperature     0.00%  
+
+Figure saved: results\figures\icc_variance_decomposition.png
+
+Output saved to: results\stats_output.txt
