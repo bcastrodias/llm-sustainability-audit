@@ -18,37 +18,53 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.6, 3.8),
                                 gridspec_kw={"width_ratios": [1, 1.3]})
 fig.patch.set_facecolor("white")
 
-# ── LEFT PANEL — total variance partition ──────────────────────────────────
+# ── LEFT PANEL — total variance partition (3-way, honest) ──────────────────
+# Question content = 27.5% of total variance; the manipulated experimental
+# factors (model 1.91 + persona 2.04 + language 0.01 + temperature 0.00) sum to
+# ~4%; the remaining ~68.5% is within-question residual (item-level noise).
 ax1.set_facecolor("white")
-q_val, exp_val = 27.5, 72.5
-colors = ["#e07b39", "#dce8f7"]
+q_val, fac_val, res_val = 27.5, 4.0, 68.5
+c_q, c_fac, c_res = "#e07b39", "#5a8fc2", "#ededed"
+fac_start = q_val
+res_start = q_val + fac_val
 
-ax1.barh(0.5, q_val, color=colors[0], height=0.28, zorder=2)
-ax1.barh(0.5, exp_val, left=q_val, color=colors[1], height=0.28, zorder=2,
-         edgecolor="#aaaaaa", lw=0.5)
+ax1.barh(0.5, q_val, color=c_q, height=0.28, zorder=2)
+ax1.barh(0.5, fac_val, left=fac_start, color=c_fac, height=0.28, zorder=3)
+ax1.barh(0.5, res_val, left=res_start, color=c_res, height=0.28, zorder=2,
+         edgecolor="#bbbbbb", lw=0.5)
 
+# in-bar percentages for the two wide segments
 ax1.text(q_val / 2, 0.5, f"{q_val:.1f}%",
-         ha="center", va="center", fontsize=13, fontweight="bold", color="white", zorder=3)
-ax1.text(q_val + exp_val / 2, 0.5, f"{exp_val:.1f}%",
-         ha="center", va="center", fontsize=13, fontweight="bold", color="#555", zorder=3)
+         ha="center", va="center", fontsize=13, fontweight="bold", color="white", zorder=4)
+ax1.text(res_start + res_val / 2, 0.5, f"{res_val:.1f}%",
+         ha="center", va="center", fontsize=12, fontweight="bold", color="#888", zorder=4)
 
+# question label (above)
 ax1.text(q_val / 2, 0.80, "Question content\n(pre-training corpus)",
          ha="center", va="bottom", fontsize=10.5, color="#e07b39", fontweight="bold")
 ax1.annotate("", xy=(q_val / 2, 0.65), xytext=(q_val / 2, 0.80),
              arrowprops=dict(arrowstyle="-|>", color="#e07b39", lw=1.0))
 
-ax1.text(q_val + exp_val / 2, 0.18, "Experimental factors\n(model, persona, language…)",
-         ha="center", va="top", fontsize=10.5, color="#5a8fc2", fontweight="bold")
-ax1.annotate("", xy=(q_val + exp_val / 2, 0.36), xytext=(q_val + exp_val / 2, 0.19),
-             arrowprops=dict(arrowstyle="-|>", color="#5a8fc2", lw=1.0))
+# experimental factors (thin slice) — callout above-right
+ax1.annotate(f"Experimental factors  {fac_val:.0f}%\n(model, persona,\nlanguage, temperature)",
+             xy=(fac_start + fac_val / 2, 0.64), xytext=(fac_start + 14, 1.06),
+             ha="center", va="bottom", fontsize=9.3, color="#3f72a8", fontweight="bold",
+             arrowprops=dict(arrowstyle="-|>", color="#3f72a8", lw=1.0,
+                             connectionstyle="arc3,rad=-0.25"))
 
-ax1.text(50, -0.10,
-         "The dominant driver of structural bias is what is asked,\nnot who asks or how it is framed.",
+# residual label (below)
+ax1.text(res_start + res_val / 2, 0.18, "Unexplained / residual",
+         ha="center", va="top", fontsize=10.5, color="#8a8a8a", fontweight="bold")
+ax1.annotate("", xy=(res_start + res_val / 2, 0.36), xytext=(res_start + res_val / 2, 0.19),
+             arrowprops=dict(arrowstyle="-|>", color="#999", lw=1.0))
+
+ax1.text(50, -0.12,
+         "What is asked drives the bias (27.5%), far more\nthan who asks or how it is framed (about 4%).",
          ha="center", va="top", fontsize=9.5, color="#333", style="italic",
          bbox=dict(boxstyle="round,pad=0.35", facecolor="#fff7f0", edgecolor="#e07b39", lw=0.8))
 
 ax1.set_xlim(0, 100)
-ax1.set_ylim(-0.62, 1.10)
+ax1.set_ylim(-0.66, 1.32)
 ax1.axis("off")
 ax1.set_title("What share of total variance does\neach source explain?",
               fontsize=11.5, pad=8, color="#1a1a1a")
